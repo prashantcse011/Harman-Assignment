@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Puritan:ital,wght@0,400;0,700;1,400;1,700&family=Titillium+Web:ital,wght@0,300;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <title>Get Started</title>
+  </head>
+  <body>
+    <div class="gs-container">
+      <!-- Creating inner container for page -->
+      <div class="gs-inner-container">
+        <!-- Creating top navigation -->
+        <div class="gs-nav-container">
+          <ul class="gs-nav generic-ul">
+            <li class="generic-table">
+              <a
+                href="#"
+                class="gs-nav-item-first vertical-center no-text-decoration"
+                >Sign Up</a
+              >
+            </li>
+            <li class="generic-table">
+              <a
+                href="#"
+                class="gs-nav-item-second vertical-center no-text-decoration"
+                >Log In</a
+              >
+            </li>
+          </ul>
+        </div>
+        <!-- This is the heading -->
+        <h1 class="gs-heading">Sign Up for Free</h1>
+        <!-- Starting the sign up form-->
+        <div class="gs-form-container">
+          <form class="gs-signup-form">
+            <!-- Creating name container to align first name with last name-->
+            <div class="gs-name-container">
+              <div class="gs-first-name-div generic-form-div relative-position">
+                <input
+                  type="text"
+                  placeholder="First Name"
+                  class="border-box gs-generic-input generic-form-input"
+                  onfocus="validate(this)"
+                  onblur="resetIfEmpty(this)"
+                />
+                <span
+                  class="gs-asterisk gs-first-name-mandatory absolute-position"
+                  >*</span
+                >
+                <img
+                  class="gs-icon gs-first-name-icon absolute-position"
+                  src="./icons/first-name.png"
+                  alt="first-name-icon"
+                />
+              </div>
+              <div class="gs-last-name-div generic-form-div relative-position">
+                <input
+                  type="text"
+                  placeholder="Last Name"
+                  class="border-box gs-generic-input generic-form-input"
+                  onfocus="validate(this)"
+                  onblur="resetIfEmpty(this)"
+                />
+                <span
+                  class="gs-asterisk gs-last-name-mandatory absolute-position"
+                  >*</span
+                >
+              </div>
+            </div>
+            <!-- Creating remaining form fields -->
+            <div class="gs-email-div generic-form-div relative-position">
+              <input
+                type="email"
+                placeholder="Email Address"
+                class="border-box gs-generic-input generic-form-input"
+                onfocus="validate(this)"
+                onblur="resetIfEmpty(this)"
+              />
+              <span class="gs-asterisk gs-email-mandatory absolute-position"
+                >*</span
+              >
+            </div>
+
+            <div class="gs-password-div generic-form-div relative-position">
+              <input
+                type="password"
+                placeholder="Set A Password"
+                class="border-box gs-generic-input generic-form-input"
+                onfocus="validate(this)"
+                onblur="resetIfEmpty(this)"
+              />
+              <span class="gs-asterisk gs-password-mandatory absolute-position"
+                >*</span
+              >
+              <img
+                class="gs-icon gs-password-icon absolute-position"
+                src="./icons/reset-changed.png"
+                alt="password-icon"
+              />
+            </div>
+
+            <!-- Get Started button -->
+            <button class="gs-get-started generic-bold">GET STARTED</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script src="./js/form-validation.js"></script>
+  </body>
+</html>
